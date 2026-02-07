@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Hora do Dia</h1>
+    </header>
+    <section>
+       <div>
+           <p>Ano de Nascimento:
+            <input type="number" name="txtano" id="txtano" min="0" max="100">
+           </p>
+           <p>Sexo:
+            <input type="radio" name="radsex" id="mas">
+            <label for="radsex">masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="radsex">feminino</label>
+           </p>
+           <input type="submit" value="Verifica" onclick="verificar()">
+       </div>
+       <div>
+        <p id="res">Preencher os dados acima para ver os resultados</p>
+       </div>
+    </section>
+    <footer>
+        <p>Igor Sarmento</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
