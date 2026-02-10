@@ -8,7 +8,7 @@ function contar() {
     let passo = Number(document.getElementById('ip').value)
     let res = document.getElementById('res')
     
-    if(inicio == 0 || fim == 0 || passo == 0){
+    if(inicio == 0 || fim == 0 || passo < 0){
       alert('[erro] falta de dados!')
     } else {
         res.innerHTML = `resultado: <br>`
@@ -16,9 +16,9 @@ function contar() {
         let f = fim
         let p = passo
 
-        res.replec
         if (p<=0){
-            p = 1
+            alert('passo será considerado 2.')
+            p = 2
         }
         if (i < f){
             //contagem crescente
